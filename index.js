@@ -1,11 +1,9 @@
 // Iteration 1: Names and Input
 
-const hacker1 = "Filipa"
-const hacker2 = "Pippas"
+const hacker1 = "Joana" // driver
+const hacker2 = "Ana" // navigator
 console.log(`The driver's name is ${hacker1}`)
-console.log(hacker1.length)
 console.log(`The navigator's name is ${hacker2}`)
-console.log(hacker2.length)
 
 
 // Iteration 2: Conditionals
@@ -22,3 +20,26 @@ else{
 
 
 // Iteration 3: Loops
+
+let result = ""
+for (let i=0; i<hacker1.length; i++) {
+    result += hacker1[i].toUpperCase() + " ";
+}
+console.log(result)
+
+let reverseName = ""
+for(let i=hacker2.length-1; i>=0; i--) {
+    reverseName += hacker2[i];
+}
+console.log(reverseName)
+
+if (hacker1 < hacker2) {
+    console.log(`The driver's name (${hacker1}) goes first.`);
+}
+else if (hacker1 > hacker2){
+    console.log(`Yo, the navigator (${hacker2}) goes first, definitely.`)
+}
+else{
+    console.log(`What?! You both have the same name?`)
+}
+
