@@ -43,6 +43,8 @@ else{
     console.log(`What?! You both have the same name?`)
 }
 
+// Bonus 1
+
 
 // Bonus 2
 
