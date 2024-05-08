@@ -43,3 +43,41 @@ else{
     console.log(`What?! You both have the same name?`)
 }
 
+
+// Bonus 2
+
+let phraseToCheck = "put it up"
+let reverseCleanWord = ""
+
+for(let i=phraseToCheck.length-1; i>=0; i--) {
+
+    
+
+    if (phraseToCheck[i] === " "){
+        continue;
+    }
+    else{
+        reverseCleanWord += phraseToCheck[i].toLowerCase();
+    }
+}
+
+// console.log(reverseCleanWord)
+
+let phraseToCheckClean = ""
+
+for (let i=0; i<phraseToCheck.length; i++) {
+
+    if (phraseToCheck[i] === " "){
+        continue;
+    }
+    else{
+        phraseToCheckClean += phraseToCheck[i].toLowerCase();
+    }
+}
+
+if (phraseToCheckClean === reverseCleanWord) {
+    console.log(`'${phraseToCheck}' is a palindrome!`)
+}
+else {
+    console.log(`'${phraseToCheck}' is NOT a palindrome...`)
+}
