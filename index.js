@@ -67,6 +67,19 @@ console.log(
   `(Using string.split() method) The long string contains ${counter * 2} words.`
 ); // 472 words.
 
+shortText = "heletlo word et ";
+
+let countEt = 0;
+for (let i = 0; i < longText.length; i++) {
+  if (
+    longText[i - 1] + longText[i] + longText[i + 1] + longText[i + 2] ===
+    " et "
+  ) {
+    countEt++;
+  }
+}
+console.log(`The long string contains the "et" ${countEt} times.`);
+
 // Bonus 2
 console.log("Bonus 2");
 
